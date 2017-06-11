@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+
+  <style name="MySplash.Base" parent="android:Theme.Material.Light">
+    <item name="android:windowNoTitle">true</item>
+  </style>
+  <style name="MySplash" parent="MySplash.Base">
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <style name="MySplash.Splash" parent ="android:Theme.Material.Light">
+    <item name="android:windowBackground" >@drawable/splash</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:colorPrimary">#fcce54</item>
+  </style>
+
+  <style name="PrincipalTheme" parent ="android:Theme.Material.Light">
+    <item name="android:windowNoTitle">true</item>
+  </style>
+</resources>

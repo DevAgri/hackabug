@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HackaBug.App.View.Plantios"
+             Title="Plantios"
+             BackgroundColor="#000000">
+
+  <ContentPage.Content>
+    <StackLayout  Padding="5">
+      <ListView  ItemsSource="{Binding ListaDadosPlantios}" x:Name="listPlantio" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <ViewCell.View>
+                <StackLayout BackgroundColor="#2f3032" Padding="10">
+                  <Grid>
+
+                    <StackLayout Grid.Column="0" Grid.Row="0">
+                      <Label Text="Id:" FontAttributes="Bold" TextColor="White"  HorizontalOptions="Start" ></Label>
+                      <Label Text="{Binding Id}" TextColor="White"  HorizontalOptions="Start"></Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1"  Grid.Row="0">
+                      <Label Text="Tecnologia:" FontAttributes="Bold" TextColor="White"  HorizontalOptions="Start" ></Label>
+                      <Label Text="{Binding Tecnologia}" TextColor="White"  HorizontalOptions="Start"></Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="0"  Grid.Row="1">
+                      <Label Text="Data:" FontAttributes="Bold" TextColor="White"  HorizontalOptions="Start" ></Label>
+                      <Label Text="{Binding dataPlantio}" TextColor="White"  HorizontalOptions="Start"></Label>
+                    </StackLayout>
+
+
+                    <StackLayout Grid.Column="1"  Grid.Row="1">
+                      <Label Text="Cultura:" FontAttributes="Bold" TextColor="White"  HorizontalOptions="Start" ></Label>
+                      <Label Text="{Binding Cultura.Nome}" TextColor="White"  HorizontalOptions="Start"></Label>
+                    </StackLayout>
+                   
+                  </Grid>
+
+                </StackLayout>
+              </ViewCell.View>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+
+    </StackLayout>
+
+  </ContentPage.Content>
+  
+</ContentPage>

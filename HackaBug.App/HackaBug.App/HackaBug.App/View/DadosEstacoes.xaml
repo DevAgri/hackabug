@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HackaBug.App.View.DadosEstacoes"
+             Title="{Binding Estacoes.Nome}"
+             Icon="@drawable/menu"
+             BackgroundColor="#000000">
+  <ContentPage.Content>
+    <StackLayout Padding="10">
+      <StackLayout Padding="10" BackgroundColor="#2f3032">
+        
+        <StackLayout Padding="10"  BackgroundColor="#2f3032" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+          <Label Text="{Binding Estacoes.Nome}" VerticalTextAlignment="Center"  FontSize="20" TextColor="White"></Label>
+        </StackLayout>
+        <Grid>
+
+         
+          
+          <StackLayout Grid.Column="0" Grid.Row="1">
+            <Label Text="Latitude"></Label>
+            <Label Text="{Binding Estacoes.Latitude}"></Label>
+          </StackLayout>
+          <StackLayout Grid.Column="1" Grid.Row="1">
+            <Label Text="Longitude"></Label>
+            <Label Text="{Binding Estacoes.Longitude}"></Label>
+          </StackLayout>
+
+          <StackLayout Grid.Column="2" Grid.Row="1">
+            <Label Text="Altitude"></Label>
+            <Label Text="{Binding Estacoes.Altura}"></Label>
+          </StackLayout>
+          
+        </Grid>
+      </StackLayout>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

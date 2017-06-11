@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HackaBug.App.View.Menus"
+             Title="Menu"
+             Icon="@drawable/menu"
+             BackgroundColor="#2f3032"
+             >
+<ContentPage.Content>
+  <StackLayout>
+    <StackLayout>
+      <Image Source="@drawable/menu_fundo" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Image>
+    </StackLayout>
+    <StackLayout Padding="10">
+      <StackLayout>
+        <Button TextColor="White" Image="@drawable/cultura" Clicked="Culturas" Text="Cultura" BorderRadius="0" BackgroundColor="Black"></Button>
+      </StackLayout>
+
+      <StackLayout>
+        <Button TextColor="White" Text="Pragas"  Image="@drawable/Pragas" Clicked="Pragas"  BorderRadius="0" BackgroundColor="Black"></Button>
+      </StackLayout>
+
+
+      <StackLayout>
+        <Button TextColor="White" Text="Plantios"  Image="@drawable/plantios" Clicked="Plantios"  BorderRadius="0" BackgroundColor="Black"></Button>
+      </StackLayout>
+      
+    </StackLayout>
+  </StackLayout>
+</ContentPage.Content>
+  
+  
+</ContentPage>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HackaBug.App.View.Pragas"
+             Title="Pragas"
+             BackgroundColor="#000000">
+  
+  <ContentPage.Content>
+    <StackLayout  Padding="5">
+      <StackLayout BackgroundColor="#2f3032"  Padding="10">
+
+        <StackLayout>
+          <Entry Placeholder="Nome"  TextColor="White"  Text="{Binding nomePraga}"></Entry>
+        </StackLayout>
+        
+        <StackLayout>
+          <Button Text="Salvar" BorderRadius="0" Command="{Binding ButtonCadastrar}" BackgroundColor="Black" TextColor="White"></Button>
+        </StackLayout>
+
+      </StackLayout>
+
+      <ListView  ItemsSource="{Binding listaPragas}" x:Name="listPragas" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <ViewCell.View>
+                <StackLayout BackgroundColor="#2f3032" Padding="10">
+                  <Grid>
+
+                    <StackLayout Grid.Column="0">
+                      <Label Text="Id:" FontAttributes="Bold" TextColor="White"  HorizontalOptions="Start" ></Label>
+                      <Label Text="{Binding Id}" TextColor="White"  HorizontalOptions="Start"></Label>
+                    </StackLayout>
+                    
+                    <StackLayout Grid.Column="1">
+                      <Label Text="Nome:" FontAttributes="Bold" TextColor="White"  HorizontalOptions="Start" ></Label>
+                      <Label Text="{Binding Nome}" TextColor="White"  HorizontalOptions="Start"></Label>
+                    </StackLayout>
+                    
+                  </Grid>
+
+                </StackLayout>
+              </ViewCell.View>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+      
+    </StackLayout>
+
+  </ContentPage.Content>
+  
+</ContentPage>

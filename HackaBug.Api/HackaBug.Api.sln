@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackaBug.Api", "HackaBug.Api\HackaBug.Api.csproj", "{F49095EE-4830-4676-947E-E38DB3C59BF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackaBug.Domain", "HackaBug.Domain\HackaBug.Domain.csproj", "{B85023CF-6FC3-4472-87E0-4D561292F773}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackaBug.Infra.Data", "HackaBug.Infra.Data\HackaBug.Infra.Data.csproj", "{B68E255E-CF41-4099-87A8-702F2110020A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F49095EE-4830-4676-947E-E38DB3C59BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F49095EE-4830-4676-947E-E38DB3C59BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F49095EE-4830-4676-947E-E38DB3C59BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F49095EE-4830-4676-947E-E38DB3C59BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B85023CF-6FC3-4472-87E0-4D561292F773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B85023CF-6FC3-4472-87E0-4D561292F773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B85023CF-6FC3-4472-87E0-4D561292F773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B85023CF-6FC3-4472-87E0-4D561292F773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B68E255E-CF41-4099-87A8-702F2110020A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68E255E-CF41-4099-87A8-702F2110020A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68E255E-CF41-4099-87A8-702F2110020A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68E255E-CF41-4099-87A8-702F2110020A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
